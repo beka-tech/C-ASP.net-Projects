@@ -1,0 +1,15 @@
+C:\Users\abeka\Desktop\C#\TMS\bin\Debug\net10.0\TMS.exe
+C:\Users\abeka\Desktop\C#\TMS\bin\Debug\net10.0\TMS.deps.json
+C:\Users\abeka\Desktop\C#\TMS\bin\Debug\net10.0\TMS.runtimeconfig.json
+C:\Users\abeka\Desktop\C#\TMS\bin\Debug\net10.0\TMS.dll
+C:\Users\abeka\Desktop\C#\TMS\bin\Debug\net10.0\TMS.pdb
+C:\Users\abeka\Desktop\C#\TMS\obj\Debug\net10.0\TMS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abeka\Desktop\C#\TMS\obj\Debug\net10.0\TMS.AssemblyInfoInputs.cache
+C:\Users\abeka\Desktop\C#\TMS\obj\Debug\net10.0\TMS.AssemblyInfo.cs
+C:\Users\abeka\Desktop\C#\TMS\obj\Debug\net10.0\TMS.csproj.CoreCompileInputs.cache
+C:\Users\abeka\Desktop\C#\TMS\obj\Debug\net10.0\TMS.sourcelink.json
+C:\Users\abeka\Desktop\C#\TMS\obj\Debug\net10.0\TMS.dll
+C:\Users\abeka\Desktop\C#\TMS\obj\Debug\net10.0\refint\TMS.dll
+C:\Users\abeka\Desktop\C#\TMS\obj\Debug\net10.0\TMS.pdb
+C:\Users\abeka\Desktop\C#\TMS\obj\Debug\net10.0\TMS.genruntimeconfig.cache
+C:\Users\abeka\Desktop\C#\TMS\obj\Debug\net10.0\ref\TMS.dll

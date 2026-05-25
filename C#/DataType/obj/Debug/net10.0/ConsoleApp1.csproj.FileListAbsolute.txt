@@ -1,0 +1,5 @@
+C:\Users\abeka\Desktop\C#\DataType\obj\Debug\net10.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abeka\Desktop\C#\DataType\obj\Debug\net10.0\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Users\abeka\Desktop\C#\DataType\obj\Debug\net10.0\ConsoleApp1.AssemblyInfo.cs
+C:\Users\abeka\Desktop\C#\DataType\obj\Debug\net10.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\abeka\Desktop\C#\DataType\obj\Debug\net10.0\ConsoleApp1.sourcelink.json

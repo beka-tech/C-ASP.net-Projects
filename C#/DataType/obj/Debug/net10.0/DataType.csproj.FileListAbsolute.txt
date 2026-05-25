@@ -1,0 +1,15 @@
+C:\Users\abeka\Desktop\C#\DataType\bin\Debug\net10.0\DataType.exe
+C:\Users\abeka\Desktop\C#\DataType\bin\Debug\net10.0\DataType.deps.json
+C:\Users\abeka\Desktop\C#\DataType\bin\Debug\net10.0\DataType.runtimeconfig.json
+C:\Users\abeka\Desktop\C#\DataType\bin\Debug\net10.0\DataType.dll
+C:\Users\abeka\Desktop\C#\DataType\bin\Debug\net10.0\DataType.pdb
+C:\Users\abeka\Desktop\C#\DataType\obj\Debug\net10.0\DataType.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\abeka\Desktop\C#\DataType\obj\Debug\net10.0\DataType.AssemblyInfoInputs.cache
+C:\Users\abeka\Desktop\C#\DataType\obj\Debug\net10.0\DataType.AssemblyInfo.cs
+C:\Users\abeka\Desktop\C#\DataType\obj\Debug\net10.0\DataType.csproj.CoreCompileInputs.cache
+C:\Users\abeka\Desktop\C#\DataType\obj\Debug\net10.0\DataType.sourcelink.json
+C:\Users\abeka\Desktop\C#\DataType\obj\Debug\net10.0\DataType.dll
+C:\Users\abeka\Desktop\C#\DataType\obj\Debug\net10.0\refint\DataType.dll
+C:\Users\abeka\Desktop\C#\DataType\obj\Debug\net10.0\DataType.pdb
+C:\Users\abeka\Desktop\C#\DataType\obj\Debug\net10.0\DataType.genruntimeconfig.cache
+C:\Users\abeka\Desktop\C#\DataType\obj\Debug\net10.0\ref\DataType.dll

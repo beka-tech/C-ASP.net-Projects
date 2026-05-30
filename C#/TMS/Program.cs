@@ -101,89 +101,107 @@ var sw = Stopwatch.StartNew();
 // await Task.WhenAll(tasks);
 // Console.WriteLine($"Async parallel: {sw.ElapsedMilliseconds}ms");
 
-async Task<Student>FetchStudentAsync(string id)
-{
-  Console.WriteLine($"Fecth{id}...");
-  await Task.Delay(300);
-  return new Student
-  {
-    Id =id,
-    Name=$"Student-{id}",
-    Age =20,
-    GPA = id switch
-    {
-      "S1"=>3.8m,
-      "S2"=>2.4m,
-      "S3"=>3.5m,
-      "S4"=>1.9m,
-      "S5"=>3.2m,
-      _=>2.5m
-    }
-  };
-}
+// async Task<Student>FetchStudentAsync(string id)
+// {
+//   Console.WriteLine($"Fecth{id}...");
+//   await Task.Delay(300);
+//   return new Student
+//   {
+//     Id =id,
+//     Name=$"Student-{id}",
+//     Age =20,
+//     GPA = id switch
+//     {
+//       "S1"=>3.8m,
+//       "S2"=>2.4m,
+//       "S3"=>3.5m,
+//       "S4"=>1.9m,
+//       "S5"=>3.2m,
+//       _=>2.5m
+//     }
+//   };
+// }
 
-async Task<Course>FecthCourseAsync(string code)
-{
-  Console.WriteLine($"Fecth course{code}...");
-  await Task.Delay(200);
-  return new Course
-  {
-    Code = code,
-    Title = $"Course-{code}",
-    Capacity = code switch
-    {
-      "CRS-101"=>2,
-      "CRS-201"=>30,
-      "CRS-301"=>15,
-      _=>25
-    }
-  };
-}
+// async Task<Course>FecthCourseAsync(string code)
+// {
+//   Console.WriteLine($"Fecth course{code}...");
+//   await Task.Delay(200);
+//   return new Course
+//   {
+//     Code = code,
+//     Title = $"Course-{code}",
+//     Capacity = code switch
+//     {
+//       "CRS-101"=>2,
+//       "CRS-201"=>30,
+//       "CRS-301"=>15,
+//       _=>25
+//     }
+//   };
+// }
 
-sw.Restart();
+// sw.Restart();
 
-string[]studentIds = ["S1","S2","S3","S4","S5"];
-string[]courseCodes =["CRS-101","CRS-201","CRS-301"];
+// string[]studentIds = ["S1","S2","S3","S4","S5"];
+// string[]courseCodes =["CRS-101","CRS-201","CRS-301"];
 
-var studentTasks = studentIds.Select(id=>FetchStudentAsync(id));
-var courseTasks = courseCodes.Select(code=>FecthCourseAsync(code));
+// var studentTasks = studentIds.Select(id=>FetchStudentAsync(id));
+// var courseTasks = courseCodes.Select(code=>FecthCourseAsync(code));
 
-Student[]students = await Task.WhenAll(studentTasks);
-Course[]courses = await Task.WhenAll(courseTasks);
+// Student[]students = await Task.WhenAll(studentTasks);
+// Course[]courses = await Task.WhenAll(courseTasks);
 
-Console.WriteLine($"\nLoaded {students.Length} students and {courses.Length} courses in {sw.ElapsedMilliseconds}ms");
+// Console.WriteLine($"\nLoaded {students.Length} students and {courses.Length} courses in {sw.ElapsedMilliseconds}ms");
 
-foreach(var s in students)
-{
-  Console.WriteLine($"{s.Name} GPA:{s.GPA}");
-}
+// foreach(var s in students)
+// {
+//   Console.WriteLine($"{s.Name} GPA:{s.GPA}");
+// }
 
-Console.WriteLine("================================================================");
+// Console.WriteLine("================================================================");
 
-var enrollCourse = new Course {Code="CRS-101",Title="C# Master",Capacity = 2};
-var enrollService = new EnrollmentService();
+// var enrollCourse = new Course {Code="CRS-101",Title="C# Master",Capacity = 2};
+// var enrollService = new EnrollmentService();
 
-var enrollments = new List<EnrollmentRecord>();
-var failures = new List<string>();
+// var enrollments = new List<EnrollmentRecord>();
+// var failures = new List<string>();
 
-sw.Restart();
+// sw.Restart();
 
-foreach(var student in students)
-{
-  try
-  {
-    var record = enrollService.ProcessRegistration(student,enrollCourse);
-    enrollCourse.EnrolledCount++;
-    enrollments.Add(record);
-    Console.WriteLine($"Enrolled:{student.Name}");
-  }
-  catch (InvalidOperationException ex)
-  {
-    failures.Add($"{student.Name}:{ex.Message}");
-    Console.WriteLine($"Reject:{student.Name}{ex.Message}");
-  }
-}
+// foreach(var student in students)
+// {
+//   try
+//   {
+//     var record = enrollService.ProcessRegistration(student,enrollCourse);
+//     enrollCourse.EnrolledCount++;
+//     enrollments.Add(record);
+//     Console.WriteLine($"Enrolled:{student.Name}");
+//   }
+//   catch (InvalidOperationException ex)
+//   {
+//     failures.Add($"{student.Name}:{ex.Message}");
+//     Console.WriteLine($"Reject:{student.Name}{ex.Message}");
+//   }
+// }
 
 // Console.WriteLine(Enrolled)
 
 //check
+
+void PrintGradeReport(IEnumerable<IGradable> assessments)
+{
+  Console.WriteLine("--- Grade Report ---");
+  foreach(var item in assessments)
+  {
+    Console.WriteLine($"{item.Title} : {item.CalculateGrade():F2}");
+  }
+}
+
+
+IGradable[] cohortAssessments = [
+new Quiz { Title = "C# Basics", CorrectAnswers = 18, TotalQuestions = 20 },
+new LabAssignment { Title = "Registration API", FunctionalityScore = 90m, CodeQualityScore = 85m }
+];
+
+
+PrintGradeReport(cohortAssessments);
